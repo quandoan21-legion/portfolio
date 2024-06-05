@@ -1,3 +1,23 @@
-h1 {
-    color: #ff56f6;
+*{
+    font-family: "Roboto";
+}
+
+div.personal-info-container {
+    background-color: #d0d0d0;
+}
+
+div.personal-info-item{
+    width: 24.3%;
+    display: inline-block;
+}
+
+p.personal-info-description {
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 400;
+}
+i.info-item-icon {
+    margin: 0.25em;
+    font-size: 1em;
+    color: chocolate;
 }
