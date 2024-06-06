@@ -2,7 +2,7 @@
 header {
     background-color: darksalmon;
     color: #fff;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
     display: flex;
     justify-content: space-between;
@@ -21,15 +21,38 @@ header {
     margin-right: 10px;
 }
 
-h1 {
-    margin: 0;
+.body {
+    margin: 1;
+    padding: 1;
 }
 
-.menu {
+/* CSS cho menu-header */
+.menu-header {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px; /* Chiều cao của menu-header */
+    width: 100%; /* Chiều ngang của menu-header */
 }
+
+.menu-header li {
+    display: inline;
+    margin-right: 20px; /* Khoảng cách giữa các nút */
+}
+
+.menu-header li:last-child {
+    margin-right: 0;
+}
+
+.menu-header li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
 
 .menu li {
     display: inline;
@@ -59,8 +82,36 @@ h1 {
     width: 80%; /* Chiều rộng của profile */
     max-width: 600px; /* Chiều rộng tối đa */
     padding: 20px;
-    background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
 }
+.menu li {
+    display: inline;
+    margin-right: 10px; /* Khoảng cách giữa các nút */
+    padding: 5px 10px; /* Thêm padding cho ô chứa nút */
+    border-radius: 5px; /* Bo tròn góc của ô chứa nút */
+    border: 2px solid #afe67a; /* Viền mặc định với màu đen */
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Hiệu ứng thay đổi màu nền, màu viền và màu chữ */
+    color: #000; /* Màu chữ mặc định là đen */
+    flex-grow: 1; /* Cho phép các nút mở rộng để điền vào menu */
+    font-size: 14px; /* Kích thước chữ */
+}
+
+.menu li a {
+    text-decoration: none;
+}
+
+/* Hiệu ứng thay đổi màu nền, màu viền và màu chữ khi di chuột vào */
+.menu li:hover {
+    background-color: #ffa07a; /* Màu nền khi di chuột vào */
+    border-color: #ffa07a; /* Màu viền khi di chuột vào */
+    color: #000; /* Màu chữ khi di chuột vào */
+}
+
+
+
+
+
+
 
