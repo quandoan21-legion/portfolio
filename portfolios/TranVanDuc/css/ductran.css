@@ -1,0 +1,66 @@
+/* CSS cho header */
+header {
+    background-color: darksalmon;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.avatar-container {
+    display: flex;
+    align-items: center;
+}
+
+.avatar-container img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Khoanh tròn  */
+    margin-right: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+/* CSS cho profile-container */
+.profile-container {
+    display: flex;
+    justify-content: center; /* Căn giữa  chiều ngang */
+    align-items: center; /* Căn giữa chiều dọc */
+    height: 100vh; /* Chiều cao */
+    margin: 0;
+}
+
+/* CSS cho profile */
+.profile {
+    text-align: center; /* Căn giữa nội dung bên trong */
+    width: 80%; /* Chiều rộng của profile */
+    max-width: 600px; /* Chiều rộng tối đa */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+

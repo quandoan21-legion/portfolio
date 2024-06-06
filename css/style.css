@@ -58,20 +58,15 @@ header {
     border: 2px solid pink; /* Viền màu hồng xung quanh avatar */
     cursor: pointer; /* Đổi con trỏ thành biểu tượng chỉ tay khi hover */
 }
-.person .info {
-    display: flex;
-    flex-direction: row; /* Sắp xếp các phần tử con theo hàng ngang */
-    align-items: center;
-    justify-content: center;
-}
 .person h2 {
     margin: 0;
     background-color: greenyellow; /* Màu nền xanh nhạt cho tên */
     padding: 5px 10px; /* Khoảng cách lề của phần tên */
     border-radius: 5px; /* Bo tròn các góc của hộp tên */
+    display: inline-grid;
+
 }
 .person p {
     margin: 0;
     text-align: center;
-    margin-left: 10px; /* Thêm khoảng cách giữa h2 và p */
 }
