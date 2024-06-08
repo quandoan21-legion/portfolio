@@ -2,8 +2,26 @@
     font-family: "Roboto";
 }
 
-div.personal-info-container {
+#portfolio-hero {
+    height: 300px;
+}
+
+section.portfolio-section {
     background-color: #d0d0d0;
+}
+
+.portfolio-hero{
+    height: 30vh;
+}
+
+.personal-name{
+    padding-top: 0%;
+}
+
+padding: 0px;
+.name-position {
+    height: 500px;
+    width: 80%;
 }
 
 div.personal-info-item{
@@ -19,5 +37,5 @@ p.personal-info-description {
 i.info-item-icon {
     margin: 0.25em;
     font-size: 1em;
-    color: chocolate;
+    color: #D2691EFF;
 }
