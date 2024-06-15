@@ -1,3 +1,204 @@
-h1 {
-    color: #ff56f6;
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*{
+    font-family: Roboto !important;
+}
+
+.portfolio {
+    width: 100%;
+    display: flex;
+}
+
+.right-section {
+    padding: 2%;
+    flex-basis: 70%;
+    height: 100%;
+    background-color: white;
+}
+.left-section {
+    flex-basis: 30%;
+    height: 100%;
+}
+
+#portfolio-profile-picture {
+    height: 100%;
+    width: 100%;
+    position: fixed !important;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#portfolio-profile-picture  .profile-picture {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-x: -20rem;
+    background-image: url("https://cdn.shopify.com/s/files/1/0586/2614/6502/files/DSC_8068_copy.jpg?v=1718421313");
+    min-height: 100%;
+}
+
+.portfolio-owner{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.portfolio-owner .full-name{
+    font-size: 7rem;
+}
+
+.portfolio-owner .role {
+    font-size: 3rem;
+    font-weight: 200;
+    margin: 0.5rem auto;
+}
+
+.portfolio-owner .download-resume-button{
+    margin-top: 1rem;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #777777;
+    border-radius: 3px;
+}
+.portfolio-owner .download-resume-button > a{
+    text-decoration: none;
+    color: white;
+}
+
+.section-header{
+    font-size: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.skill-set-title{
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+.skill-set-mastery{
+    height: 2rem;
+    display: flex;
+    width: 100%;
+    background-color: #cccccc;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.mastery{
+    background-color: #ffffc8;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#C {
+    flex-basis: 65%;
+}
+
+#Java {
+    flex-basis: 55%;
+}
+
+.portfolio-owner-achievement{
+    display: flex;
+    width: 100%;
+    height: 7rem;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+}
+
+.achievement-item {
+    flex-grow: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #777777;
+    width: 100%;
+    height: 100%;
+}
+
+.achievement-number{
+    font-size: 2.5rem;
+}
+.achievement-text{
+    padding-top: 0.5rem;
+}
+
+.contact-info{
+    margin-top: 0.5rem;
+}
+.portfolio-contact-me-item b{
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+.about-me-p{
+    line-height: 1.2rem;
+}
+
+.footer {
+    background-color: #d3d3d3;
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
 }
