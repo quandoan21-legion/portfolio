@@ -22,183 +22,338 @@ time, mark, audio, video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    font-family: Roboto;
+    color: white;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
+
 body {
+    margin: 0;
     line-height: 1;
 }
+
 ol, ul {
     list-style: none;
 }
+
 blockquote, q {
     quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
-*{
-    font-family: Roboto !important;
+li > img {
+    background-color: rgba(255, 255, 200, 0.2);
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 5%;
+    background-color: #222222;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
 }
 
-.portfolio {
+
+#navbar-profile-image{
     width: 100%;
+}
+body {
+    background-color: black;
+}
+li{
     display: flex;
-}
-
-.right-section {
-    padding: 2%;
-    flex-basis: 70%;
-    height: 100%;
-    background-color: white;
-}
-.left-section {
-    flex-basis: 30%;
-    height: 100%;
-}
-
-#portfolio-profile-picture {
-    height: 100%;
-    width: 100%;
-    position: fixed !important;
-    overflow: hidden;
-    z-index: -1;
-}
-
-#portfolio-profile-picture  .profile-picture {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-position-x: -20rem;
-    background-image: url("https://cdn.shopify.com/s/files/1/0586/2614/6502/files/DSC_8068_copy.jpg?v=1718421313");
-    min-height: 100%;
-}
-
-.portfolio-owner{
-    width: 100%;
-    height: 65vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-
-}
-
-.portfolio-owner .full-name{
-    font-size: 7rem;
-}
-
-.portfolio-owner .role {
-    font-size: 3rem;
-    font-weight: 200;
-    margin: 0.5rem auto;
-}
-
-.portfolio-owner .download-resume-button{
-    margin-top: 1rem;
-    width: 10rem;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 1rem;
-    background-color: #777777;
-    border-radius: 3px;
+    justify-content: center;
 }
-.portfolio-owner .download-resume-button > a{
+
+li a {
+    display: block;
+    color: white;
+    width: 90%;
+    padding: 0.8rem 0.16rem;
     text-decoration: none;
+    text-align: center;
+    font-family: Roboto;
+}
+li i {
+    padding-top: 0.8rem;
     color: white;
 }
 
-.section-header{
-    font-size: 3rem;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
+#portfolio-content{
+    margin-left: 5%;
+    padding: 0 20%;
+    background-color: black;
 }
 
-.skill-set-title{
-    font-size: 1.5rem;
-    margin: 10px;
-}
-
-.skill-set-mastery{
-    height: 2rem;
-    display: flex;
+#portfolio-home{
+    height: 100%;
     width: 100%;
-    background-color: #cccccc;
-    align-items: center;
-    margin: 1rem 0;
-}
-
-.mastery{
-    background-color: #ffffc8;
-    height: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#C {
-    flex-basis: 65%;
-}
-
-#Java {
-    flex-basis: 55%;
-}
-
-.portfolio-owner-achievement{
-    display: flex;
-    width: 100%;
-    height: 7rem;
-    background-color: aqua;
-    justify-content: center;
-    align-items: center;
-}
-
-.achievement-item {
-    flex-grow: 4;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background-color: #777777;
-    width: 100%;
-    height: 100%;
 }
 
-.achievement-number{
-    font-size: 2.5rem;
-}
-.achievement-text{
-    padding-top: 0.5rem;
-}
-
-.contact-info{
-    margin-top: 0.5rem;
-}
-.portfolio-contact-me-item b{
-    font-weight: 700;
-    font-size: 1.25rem;
-}
-.about-me-p{
-    line-height: 1.2rem;
+#portfolio-fullname{
+    color: #fff;
+    font-family: Roboto;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 300;
+    padding-top: 2.5rem;
 }
 
-.footer {
-    background-color: #d3d3d3;
-    width: 100%;
-    height: 15rem;
+#portfolio-role{
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-family: Roboto;
+    font-weight: 200;
+}
+
+#portfolio-download-my-resume{
+    text-decoration: none;
+    background-color: white;
+    height: 2rem;
+    width: 30%;
+    border-radius: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 3rem;
+    margin: 0 auto;
+}
+
+#portfolio-download-my-resume a {
+    text-decoration: none;
+    color: black;
+    font-family: Roboto;
+    font-size: 0.75rem;
+}
+#home-profile-image{
+    margin: 0 auto;
+    width: 50%;
+    z-index: 0;
+    margin-top: -15%;
+}
+
+
+.section-title{
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+.divider{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(212, 233, 255, 0.2);
+}
+
+.about-me-text{
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #757575;
+    line-height: 1.5rem;
+}
+
+#portfolio-my-skills{
+    margin: 2rem auto;
+}
+
+.my-skill-title{
+    font-size: 1.25rem;
+    letter-spacing: 0.14rem;
+    font-weight: 300;
+    color: #757575;
+    margin: 0.5rem auto;
+}
+
+.my-skill-bar{
+    width: 100%;
+    height: 2rem;
+    background-color: white;
+    display: flex;
+}
+.my-skill-progress{
+    height: 2rem;
+    flex-basis: 75%;
+    background-color: #616161;
+}
+
+#portfolio-my-projects{
+    margin: 2rem auto;
+}
+
+.section-subtitle{
+    font-size: 1rem;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+    color: #757575;
+}
+#projects-holder{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.my-project{
+    height: 100%;
+    flex-grow: 4;
+    display: flex;
+    flex-direction: column;
+    padding: 0.25rem;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+}
+
+.project-image{
+    background-image: url("../img/IMG_0411.PNG");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    object-fit: contain;
+    flex-basis: 60%;
+    background-color: tan;
+    border-radius: 0.25rem;
+}
+
+.project-title{
+    font-size: 1.15rem;
+    font-weight: 500;
+    padding: 0.5rem 0;
+}
+.project-description{
+    font-size: 0.65rem;
+}
+
+a.project-button{
+    margin: auto 0.01rem  0.15rem 0.01rem;
+    text-decoration: none;
+
+}
+.view-project-button{
+    background-color: #353535;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+}
+
+#portfolio-contact-me{
+    margin: 3rem auto;
+    display: flex;
+}
+
+.contact-me-left{
+    flex-basis: 55%;
+}
+
+.contact-me-right{
+    flex-basis:40%;
+}
+
+.interest-title{
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+.interested-items-holder{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: .75rem;
+}
+.interested-item{
+    min-width:25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    height: 2rem;
+    border: 1px solid white;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+.primary{
+    background-color: white;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+}
+
+#contact-me-name ,#contact-me-email, #contact-me-message{
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+}
+
+.contact-me-submit-btn-icon{
+    padding-right: 0.5rem;
+}
+.contact-me-submit-btn{
+    border-radius: 0.25rem;
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #353535;
+    margin: auto 0.01rem  0.15rem 0.01rem;
+}
+
+#portfolio-footer{
+    margin-left: 5%;
+    width: 100%;
+    height: auto;
+}
+
+#footer-subtitle{
+    text-align: center;
+    font-size: 1rem;
+}
+
+#contact-me-icons-holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    gap: 1.5rem;
+}
+
+.footer-icon{
+    font-size: 2rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+    ul{
+        width: 100%;
+    }
+    li{
+        flex-direction: row;
+    }
 }
