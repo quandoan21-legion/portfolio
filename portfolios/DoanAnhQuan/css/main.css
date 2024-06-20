@@ -25,6 +25,9 @@ time, mark, audio, video {
     font-family: Roboto;
 }
 
+*{
+    scroll-behavior: smooth;
+}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -352,6 +355,8 @@ a.nav-item.downloadCV:hover {
 
 #contact-info{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .contact-info-wrapper{
     margin: 1rem 2%;
@@ -601,5 +606,7 @@ input#send-button{
 
     #contact-info{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
