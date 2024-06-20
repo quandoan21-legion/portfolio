@@ -1,3 +1,103 @@
-h1 {
-    color: #ff56f6;
+@import url(https://db.onlinewebfonts.com/c/cf3fb387331afda8f5d7f9c8dea3cd13?family=Jaturat);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:"Roboto", sans-serif;
+    background: black;
+    color: white;
+    overflow-x: hidden;
+
+}
+.home{
+    position: relative;
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-between;
+    background-image: url("portfolio banner (1300 x 500 px).svg") ;
+    padding: 20px;
+    width: 1300px;
+    height:500px
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav span{
+    cursor: pointer;
+}
+nav span:hover{
+    color: orange;
+}
+.nav_contact_link{
+    height: 100%;
+    padding: 0.75ch 1.5vw;
+    border:1px solid white;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    margin-left: auto;
+
+}
+.nav_contact_link:hover{
+    background-color: white;
+    color: black;
+}
+.text {
+    font-family: "Jaturat", sans-serif;
+    font-size: 72.1px;
+    text-align: center;
+    position: relative;
+    top: -40px;
+    left:-100px;
+    font-weight: bold;
+}
+.text2{
+    font-family: "jaturat", sans-serif;
+    font-size:26.1px;
+    text-align: center;
+    position: relative;
+    font-weight: no bold;
+    top: -190px;
+    left:-220px;
+
+}
+.logo{
+    position: absolute;
+    top: 230px;
+    right: 20px;
+    transform: translate(-50%, -50%) scale(1.0);
+}
+.contact_me {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    margin-right: 15px; /* Khoảng cách giữa các biểu tượng */
+    transition: transform 0.3s ease;
+}
+
+.contact_link i {
+    display: block; /* Đảm bảo biểu tượng là phần tử block */
+}
+
+.contact_link:hover {
+    transform: scale(1.2); /* Phóng to biểu tượng khi di chuột qua */
 }
