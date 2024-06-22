@@ -33,7 +33,7 @@ function dropDownMenu() {
 }
 
 function validateForm() {
-    document.getElementById("form-error").style.display = "none";
+    document.getElementById("contact-form-validate-error").style.display = "none";
     clearErrorMessage("subject");
     clearErrorMessage("name");
     clearErrorMessage("email");
@@ -73,6 +73,7 @@ function validateInputField(inputId) {
         return true;
     } else {
         user2.style.border = "red solid 3px";
+
         document.getElementById("form-error").style.display = "block";
         document.getElementById(inputId + "-error").style.display = "block";
 
