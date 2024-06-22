@@ -1,14 +1,241 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="js/main.js">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title icon -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+    <title>Tran Duc</title>
+
+    <!-- Font Awesome cdn link -->
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Custom css file link -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- JQuery cdn link -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Custom js link -->
+    <script type="text/javascript" src="js/scripts.js"></script>
+
 </head>
+
+
 <body>
-    <h1>THIS IS INDEX html file</h1>
+
+<!-- Page Loader start -->
+
+<div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
+
+<!-- Page Loader end -->
+
+<!-- header section starts -->
+
+<header>
+    <div class="user">
+        <img src="img/pic.png" alt="pic.jpg">
+        <h3 class="name">Trần Văn Đức</h3>
+        <p class="post">web developer</p>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#education">education</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#contact">contact</a></li>
+            <li><a href="../../index.html">Portfolio Team</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<div id="menu" class="fas fa-bars"></div>
+
+
+<!-- Home section starts -->
+
+<section class="home" id="home">
+    <h3>hi there !</h3>
+    <h1>i'm <span>Trần Văn Đức</span></h1>
+    <p>And I am a web application and software developer currently living in Vietnam. I have completed courses in C,
+        HTML, CSS, and JavaScript. I am pursuing an international programmer training program at FPT Aptech, with my
+        main focus and inspiration being web development. I am both motivated and goal-oriented, continuously
+        experimenting with new technologies and techniques. I am very passionate about web development and strive to
+        improve myself as a developer as well as contribute to the development community at large.</p>
+    <a href="#about">
+        <button class="btn">About Me <i class="fas fa-user"></i></button>
+    </a>
+
+</section>
+
+<!-- Home section ends -->
+
+<!-- About section starts -->
+
+<section class="about" id="about">
+    <h1 class="heading"><span>about</span> me</h1>
+
+    <div class="row">
+        <div class="info">
+            <h3><span>name: </span>Trần Văn Đức</h3>
+            <h3><span>age: </span>26</h3>
+            <h3><span>qualification: </span>Fpt - Aptech</h3>
+            <h3><span>post: </span>Web Developer</h3>
+            <h3><span>language: </span>Vietnamese, english</h3>
+            <a target="_blank" href="./files/Cv.pdf">
+                <button class="btn">Download CV <i class="fas fa-download"></i></button>
+            </a>
+        </div>
+
+        <div class="counter">
+            <div class="box">
+                <span>6</span>
+                <h3>Month of experience</h3>
+            </div>
+
+            <div class="box">
+                <span>0</span>
+                <h3>projects completed</h3>
+            </div>
+
+            <div class="box">
+                <span>...</span>
+                <h3>happy clients</h3>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- About section ends -->
+
+<!-- Education section starts -->
+
+<section class="education" id="education">
+
+    <h1 class="heading">my <span>education</span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-graduation-cap"></i>
+            <span>2016</span>
+            <h3>Graduated from Secondary School</h3>
+            <h4>Tao Son School</h4>
+            <p>I successfully completed all credits without any mistakes and achieved an A+ grade.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-graduation-cap"></i>
+            <span>2017</span>
+            <h3>higher secondary school certificate</h3>
+            <h4>Trung Học Phổ Thông Anh Sơn 2</h4>
+            <p>I graduated from Anh Son 2 High School, having successfully completed all subjects and credits available
+                at the school, and achieved an average grade of 7.8.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-graduation-cap"></i>
+            <span>2021</span>
+            <h3>Bachelor of Law at</h3>
+            <h4>School of Law - Vietnam National University, Hanoi</h4>
+            <p>I graduated with a Good Degree from the School of Law - Vietnam National University, Hanoi. I
+                successfully completed all credits without any mistakes and achieved a B+ grade.</p>
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- Education section ends -->
+
+<!-- Portfolio section starts -->
+
+<section class="portfolio" id="portfolio">
+
+    <h1 class="heading">my <span>portfolio</span></h1>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="./img/cool_spacecat-wallpaper-1920x1080.jpg" alt="Project1">
+        </div>
+
+        <div class="box">
+            <img src="./img/lovely_space_kitten-wallpaper-1920x1080.jpg" alt="Project2">
+        </div>
+
+        <div class="box">
+            <img src="./img/pokemon_video_game-wallpaper-1920x1080.jpg" alt="Project3">
+        </div>
+
+        <div class="box">
+            <img src="./img/spongebob_and_gary_snail-wallpaper-1920x1080.jpg" alt="Project4">
+        </div>
+
+        <div class="box">
+            <img src="./img/pokemon_video_game-wallpaper-1920x1080.jpg" alt="Project5">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Portfolio section ends -->
+
+<!-- Contact section starts -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"><span>contact</span> me</h1>
+
+    <div class="row">
+        <div class="content">
+            <h3 class="title">contact info</h3>
+            <div class="info">
+                <h3><a href="mailto://Ductran.byte@gmail.com" style="text-transform: none !important;color: #fff;"><i
+                        class="fas fa-envelope"></i> Ductran.byte@gmail.com</a></h3>
+                <h3><a href="tel://+84931353598" style="text-transform: none !important;color: #fff;"><i
+                        class="fas fa-phone-alt"></i> +84931353598</a></h3>
+                <h3><i class="fas fa-map-marker-alt"></i> Ha Noi, VietNam</h3>
+            </div>
+        </div>
+
+        <form action="#" method="post">
+            <input type="text" name="name" class="box" placeholder="Name">
+            <input type="text" name="email" class="box" placeholder="Email">
+            <input type="text" name="project" class="box" placeholder="Project">
+            <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+            <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i></button>
+        </form>
+
+    </div>
+
+</section>
+
+<!-- Contact section ends -->
+
+
+<!-- Scroll to top button starts -->
+
+<a href="#home" class="top">
+    <img src="img/scroll-top-img.png" alt="scroll top img">
+</a>
+
+<!-- Scroll to top button ends -->
+
 </body>
 </html>

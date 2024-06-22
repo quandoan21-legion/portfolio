@@ -1,3 +1,296 @@
-h1 {
-    color: #ff56f6;
+@import url(https://db.onlinewebfonts.com/c/cf3fb387331afda8f5d7f9c8dea3cd13?family=Jaturat);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:"Roboto", sans-serif;
+    background: black;
+    color: white;
+    overflow-x: hidden;
+
+}
+.home{
+    position: relative;
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-between;
+    background-image: url("portfolio banner (1300 x 500 px).svg") ;
+    padding: 15px;
+    width: 1300px;
+    height:500px
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav span{
+    cursor: pointer;
+}
+nav span:hover{
+    color: orange;
+}
+.nav_contact_link{
+    height: 100%;
+    padding: 0.75ch 1.5vw;
+    border:1px solid white;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    margin-left: auto;
+    margin-right: 30px;
+
+}
+.nav_contact_link:hover{
+    background-color: white;
+    color: black;
+}
+.text {
+    font-family: "Jaturat", sans-serif;
+    font-size: 72.1px;
+    text-align: center;
+    position: relative;
+    top: -40px;
+    left:-100px;
+    font-weight: bold;
+}
+.text2{
+    font-family: "jaturat", sans-serif;
+    font-size:26.1px;
+    text-align: center;
+    position: relative;
+    font-weight: no bold;
+    top: -190px;
+    left:-220px;
+
+}
+.logo{
+    position: absolute;
+    top: 230px;
+    right: 20px;
+    transform: translate(-50%, -50%) scale(1.0);
+}
+.About{
+    font-family: "Jaturat", sans-serif;
+    font-size: 72.1px;
+    text-align: center;
+    background-image: url("background_about_me.svg");
+    width:1300px;
+    height:600px;
+    justify-content: center;
+    padding-top: 130px;
+}
+.about_me{
+    font-family: "Jaturat", sans-serif;
+    color: #a2e3f9;
+    font-size: 50px;
+    font-weight: bold;
+
+}
+.about_text{
+    font-family:"Roboto", sans-serif;
+    font-size: 20px;
+    color:white;
+    text-align: justify;
+    margin-top: 20px;
+    justify-content: left;
+
+}
+.about_text span {
+    display: flex;
+    justify-content: left;
+    margin-top: 50px;
+    margin-left: 400px;
+    width:35vw;
+}
+.me{
+    position: absolute;
+    margin-top: -350px;
+    margin-left: 105px;
+}
+.Project {
+    font-family: "Jaturat", sans-serif;
+    background-image: url("background_project.svg");
+    width: 1300px;
+    height: 600px;
+    text-align: center;
+    color: #a2e3f9;
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+}
+
+.slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    height: 300px;
+    margin-top: 120px;
+    justify-content: center;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+    position: relative;
+}
+
+.slide {
+    position: relative;
+    min-width: 100%;
+}
+
+.slide img {
+    width: 800px;
+    height: 300px;
+    opacity: 0.7;
+}
+
+.slide-text {
+    font-family: "Roboto", sans-serif;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 10px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.prev {
+    left: 250px;
+}
+
+.next {
+    right: 250px;
+}
+
+.dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.dots .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%; /* Biến chúng thành hình tròn */
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.dots .dot.active {
+    background-color: white; /
+}
+.Download {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: #31356e;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: orange;
+}
+.Contact{
+    background-image: url("background_contact.svg");
+    text-align: center;
+    width: 1300px;
+    height: 500px;
+    color: #a2e3f9;
+    font-weight: bold;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    .contact-me{
+    font-family: "Jaturat", sans-serif;
+    font-size: 60px;
+    text-align: center;
+    position: relative;
+    color: #a2e3f9;
+    font-weight: bold;
+    white-space: nowrap;
+    left: 350px;
+
+}
+
+}
+.anh{
+    width: 1200px;
+    height:300px;
+    margin-top: 70px;
+     margin-left: -150px;
+
+
+}
+.Contact_me{
+   display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+}
+.contact_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+
+}
+
+
+
+.contact_link i {
+    display: block;
+}
+
+.contact_link:hover {
+    transform: scale(1.2);
 }

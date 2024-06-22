@@ -1,14 +1,93 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Porfolio-project</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="js/main.js">
-    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <h1>THIS IS INDEX html file</h1>
+<div class="home">
+    <nav>
+        <span class="nav_contact_link"> Contact </span>
+    </nav>
+    <div class="text">PORFOLIO</div>
+    <div class="text2">LAM DINH</div>
+    <img src="css/logo.svg" alt="Logo" class="logo">
+
+
+</div>
+
+<div class="About">
+    <span class="about_me">ABOUT ME</span>
+
+<div class="about_text">
+    <span>I am Lam Dinh!</span>
+    <span> I am studying at FPT Aptech to realize my dream of becoming an Global Software Developer.</span>
+    <img src="css/me.svg" alt="me" class="me">
+</div>
+</div>
+<div class="Project">
+    <span class="project">PROJECT</span>
+    <div class="slider">
+        <div class="slides">
+            <div class="slide">
+                <img src="css/1.png" alt="Project_img1">
+                <div class="slide-text">Project 1</div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="slide">
+                <img src="css/2.png" alt="Project_img2">
+                <div class="slide-text">Project 2</div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="slide">
+                <img src="css/3.png" alt="Project_img3">
+                <div class="slide-text">Project 3</div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="slide">
+                <img src="css/4.png" alt="Project_img4">
+                <div class="slide-text">Project 4</div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+        <ul class="dots">
+            <li class="dot" onclick="currentSlide(1)"></li>
+            <li class="dot" onclick="currentSlide(2)"></li>
+            <li class="dot" onclick="currentSlide(3)"></li>
+            <li class="dot" onclick="currentSlide(4)"></li>
+        </ul>
+    </div>
+     <div class="Download">
+        <a href="css/HTML5%20XP_Session%2017.pdf" download="Lam_Dinh_CV.pdf" class="download-button">Download CV</a>
+    </div>
+</div>
+
+
+
+<script src="js/main.js"></script>
+
+<div class="Contact">
+    <span class="contact-me">
+    Let’s work Together!
+    </span>
+<div class="Contact_me">
+    <a href="https://www.facebook.com/profile.php?id=100010394469453&locale=vi_VN" class="contact_link"><i class='bx bxl-facebook-circle'></i></a>
+    <a href="mailto:dinhlam030805@gmail.com" class="contact_link"><i class='bx bxl-gmail'></i></a>
+    <a href="tel:+84963808471" class="contact_link"><i class='bx bxs-phone'></i></a>
+</div>
+<img src="css/anh.png" alt="contact" class="anh">
+</div>
+
+</div>
 </body>
 </html>
