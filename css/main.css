@@ -93,6 +93,11 @@ video {
     font-family: Roboto;
 }
 
+#about-me-right {
+    width: 50%;
+}
+
+
 * {
     scroll-behavior: smooth;
 }
@@ -297,6 +302,8 @@ a.nav-item.downloadCV:hover {
 #about-me {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     margin: 3rem 10rem !important;
 }
 
