@@ -1,34 +1,273 @@
 <html>
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport"
-	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="https://kit.fontawesome.com/af63d23d76.js" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="js/main.js">
-	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+		rel="stylesheet">
+	<link rel="icon" href="img/IMG_0409-removebg-preview.png">
+	<title>Đoàn Anh Quân Portfolio</title>
 </head>
+
 <body>
+	<section id="navigation-bar">
+		<div class="top-nav">
+			<a href="#hero" class="nav-item" onclick="activeNavButton('Home')">Home</a>
+			<a href="#about-me" class="nav-item" onclick="activeNavButton('About')">About</a>
+			<a href="#my-projects" class="nav-item" onclick="activeNavButton('Project')">Project</a>
+			<a href="#skill-update" class="nav-item" onclick="activeNavButton('Skills')">Skills</a>
+			<a href="#contact-me" class="nav-item" onclick="activeNavButton('Contact')">Contact</a>
+			<a href="#" class="nav-item downloadCV" onclick="activeNavButton('Download')">Download CV</a>
+			<i class="fa-solid fa-bars mobile-menu" onclick="dropDownMenu()"></i>
+		</div>
+	</section>
+
+	<section id="hero">
+		<div id="hero-image">
+			<img src="https://cdn.shopify.com/s/files/1/0586/2614/6502/files/Profile-Mau.png?v=1718783453" alt="">
+		</div>
+		<div id="hero-content">
+			<div id="hero-hello-text">
+				Hello, I'm
+			</div>
+			<div id="hero-full-name">
+				Quan "Legion" Doan
+			</div>
+			<div id="hero-role">
+				Backend Developer (May be mobile Developer. Can't decide it yet!)
+			</div>
+			<div class="primary-button">
+				<a href="#">About Me</a>
+			</div>
+			<div class="social-media-icon-holder">
+				<i class="fa-brands fa-facebook"></i>
+				<i class="fa-brands fa-square-instagram"></i>
+				<i class="fa-brands fa-twitter"></i>
+				<i class="fa-brands fa-linkedin"></i>
+			</div>
+		</div>
+	</section>
 
 
-<section id="meet-the-team">
-	<div id="meet-the-team-text">
-		<div id="meet-the-team-subtitle">
-			Our Team
+
+	<section id="about-me">
+		<img id="about-me-image"
+			src="https://cdn.shopify.com/s/files/1/0586/2614/6502/files/Frame_7231.png?v=1718786861" alt="" srcset="">
+		<div id="about-me-right">
+
+			<div id="about-me-text-section">
+				<div class="subtitle">
+					I'm a Developer
+				</div>
+				<div class="title">
+					I can develop anything <br> you want
+				</div>
+				<div class="content-description">
+
+					Hello! My name is <strong>Quân Đoàn</strong>, a passionate and dedicated aspiring software
+					developer with a strong
+					focus on backend development. I thrive on learning new technologies and solving complex
+					problems, always striving to
+					improve myself and contribute to meaningful projects.
+
+					<br>
+					<br>
+
+					I have hands-on experience working with <strong class="bold-text">PHP</strong> and <strong
+						class="bold-text">Java</strong>, as well
+					as completing the
+					<strong class="bold-text">CS50x Certification</strong>, which honed my skills in algorithms, data
+					structures,
+					and software engineering fundamentals. I’m
+					currently exploring the world of Java development, aiming to build robust and efficient systems.
+
+					<br>
+					<br>
+
+					I am eager to join a company where I can grow as a backend developer, contribute to impactful
+					projects, and continue
+					my journey toward becoming a proficient software engineer.
+
+
+				</div>
+
+			</div>
 		</div>
-		<div id="meet-the-team-title-">
-			Get to know Us
+	</section>
+
+	<section id="my-projects">
+		<div id="my-projects-wrapper">
+			<div class="subtitle">
+				Projects
+			</div>
+			<div class="title">
+				My Amazing Works
+			</div>
+			<div class="content">
+
+			</div>
 		</div>
-	
-	</div>
-</section>
-<ul>
-	<Li><a href="portfolios/HaManhBao/index.html">HaManhBao</a></Li>
-	<Li><a href="portfolios/DoanAnhQuan/index.html">DoanAnhQuan</a></Li>
-	<Li><a href="portfolios/DinhTungLam/index.html">DinhTungLam</a></Li>
-	<Li><a href="portfolios/TongQuangMinh/index.html">TongQuangMinh</a></Li>
-	<Li><a href="portfolios/TranVanDuc/index.html">TranVanDuc</a></Li>
-</ul>
+		<div id="my-project-items-wrapper">
+			<div class="my-project-item">
+				<div class="project-image">
+					<img src="img/clarins.png" alt="">
+				</div>
+				<div class="project-text-wrapper">
+					<div class="project-title">
+						Clone Clarins Cosmetic Shop
+					</div>
+					<div class="project-description">
+						<a href="https://github.com/baohm88/team2fly-eproject" class="project-description-link">
+							<i class="fa-brands fa-github"></i> Github Repo
+						</a>
+						<br>
+						<a class="project-description-link"
+							href="https://www.youtube.com/watch?v=rrxXPAbsfaw&list=PLGeIGbirp8O93ugq648V9MAM5K8oPcfPf">
+
+							<i class="fa-brands fa-youtube"></i> Github Demo
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="skill-update">
+		<div class="text-wrapper">
+			<div class="subtitle">
+				Code is Life
+			</div>
+			<div class="title">
+				I learned something new <br>everyday to keep me up to date
+			</div>
+		</div>
+		<div class="code-skills-wrapper">
+
+			<div class="code-skill">
+				Java
+			</div>
+			<div class="code-skill">
+				PHP
+			</div>
+			<div class="code-skill">
+				C
+			</div>
+			<div class="code-skill">
+				HTML
+			</div>
+			<div class="code-skill">
+				CSS
+			</div>
+
+		</div>
+	</section>
+
+	<section id="contact-me">
+		<div class="subtitle">
+			Interested ?
+		</div>
+		<div class="title">
+			Let's do something <strong style="color: #f75023"> "Cool"</strong> together!
+		</div>
+		<div id="contact-info">
+			<div class="contact-info-wrapper">
+				<div class="contact-info-item">
+					<div class="icon-wrapper">
+						<i class="fa-solid fa-location-dot"></i>
+					</div>
+					<div class="contact-me-text-wrapper">
+						<div class="contact-info-title">
+							Home Address
+						</div>
+						<div class="contact-info-text">
+							Tan Mai, Hoang Mai, Ha Noi
+						</div>
+					</div>
+				</div>
+				<div class="contact-info-item">
+					<div class="icon-wrapper">
+
+						<i class="fa-solid fa-phone"></i>
+					</div>
+					<div class="contact-me-text-wrapper">
+
+						<div class="contact-info-title">
+							My Phone Number
+						</div>
+						<div class="contact-info-text">
+							(+84) 705165591
+						</div>
+					</div>
+				</div>
+				<div class="contact-info-item">
+					<div class="icon-wrapper">
+
+						<i class="fa-solid fa-envelope"></i>
+					</div>
+					<div class="contact-me-text-wrapper">
+
+						<div class="contact-info-title">
+							Email
+						</div>
+						<div class="contact-info-text">
+							qdoan21.legion@gmail.com
+						</div>
+					</div>
+				</div>
+			</div>
+			<form id="contact-me-form" action="#contact-me-form">
+				<div id="form-error">
+					<div id="form-error-heading">
+						Please make sure that your form input values satisfy these conditions:
+					</div>
+					<ul>
+						<li class="error-item" id="name-error">Your Name mustn't be empty</li>
+						<li class="error-item" id="email-error">Your Email mustn't be empty and must have the correct
+							format: text + "@" + domain + "." + endpoint
+						</li>
+						<li class="error-item" id="phone-error">Your Phone mustn't be empty</li>
+						<li class="error-item" id="subject-error">Your Email Subject mustn't be empty</li>
+					</ul>
+				</div>
+				<div id="contact-me-input-fields">
+					<input type="text" placeholder="Your Name" id="name">
+					<input type="email" placeholder="Your Email" id="email">
+					<input type="number" placeholder="Your Phone" id="phone">
+					<input type="text" placeholder="Subject" id="subject">
+					<textarea placeholder="Write your message here" id="message"></textarea>
+					<input type="button" id="send-button" value="Send" onclick="validateForm()">
+				</div>
+			</form>
+		</div>
+
+
+	</section>
+
+	<section id="map">
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.0964842979943!2d105.77972714020916!3d21.02882508785606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab4cd376479b%3A0xbc2e0bb9db373ed2!2zOGEgVMO0biBUaOG6pXQgVGh1eeG6v3QsIE3hu7kgxJDDrG5oLCBD4bqndSBHaeG6pXksIEjDoCBO4buZaSAxMDAwMDAsIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1718855620434!5m2!1sen!2s"
+			width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+			referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</section>
+
+	<section id="footer">
+		<div id="footer-content">
+			<div id="develop-by">
+				Develop by Quan "Legion" Doan @2024
+			</div>
+		</div>
+	</section>
 
 </body>
+
+
 </html>
